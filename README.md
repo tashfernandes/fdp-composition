@@ -1,4 +1,4 @@
-# Artifact for FOSSACS 2026
+# f-Differential Privacy - Composition Results
 
 This artifact accompanies the paper "Composition Theorems for f-Differential Privacy".
 
