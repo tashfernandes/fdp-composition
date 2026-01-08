@@ -4,7 +4,7 @@ This artifact accompanies the paper "Composition Theorems for f-Differential Pri
 
 It includes all code to generate the figures from the paper.
 
-## Requirements
+## Getting Started
 
 The artifact is available as a Docker image. Note that the image has been built for
 linux/amd64 but should run fine on Windows or MacOS (tested on MacOS with ARM processor).
@@ -12,7 +12,7 @@ linux/amd64 but should run fine on Windows or MacOS (tested on MacOS with ARM pr
 Alternatively, to run the code locally you'll need Python3 and pip.
 Required packages are specified in requirements.txt.
 
-## Quick start - Install via Docker
+### Quick start - Install via Docker
 
 1. Download and extract fossacs-artifact_1.0.tar.gz
 
@@ -34,7 +34,12 @@ Required packages are specified in requirements.txt.
 
 Generated figures will be written to the `figures/` directory.
 
-## Local install - Instructions for MacOS / Linux
+## Step-By-Step Instructions
+
+The following instructions are for a local install of the code for custom testing
+of the supplied methods.
+
+### Local install - Instructions for MacOS / Linux
 
 1. Create a virtual environment and activate
 
@@ -47,6 +52,8 @@ Generated figures will be written to the `figures/` directory.
 3. Run code to generate the figures
 
    python3 scripts/generate_plots.py
+
+This will generate the figures from the paper.
 
 NOTE: You may need to set your python path to find the python modules included in src.
 
@@ -64,6 +71,17 @@ NOTE: You may need to set your python path to find the python modules included i
 
 Most of the configurable variables are in scripts/generate_plots.py.
 eg. epsilon, delta, alpha values. These can be modified for testing.
-
 There is also a show_plot() function that can be used in place of
 save_plot() to display the graph using matplotlib.
+
+Useful helper functions are included in src/core.py and src/alg.py.
+These support the main operations of building channels and converting
+these to trade-off functions for graphing.
+Examples of how to use these can be found in src/graphs.py.
+
+QIF helper functions can be found in src/qif.py. These are used to
+implement basic QIF functionality used in the paper, such as computing
+prior and posterior vulnerabilities, and building Geometric and random
+response mechanisms. Examples of how to use these can be found in 
+src/graphs.py
+
