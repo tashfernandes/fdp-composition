@@ -1,0 +1,69 @@
+# Artifact for FOSSACS 2026
+
+This artifact accompanies the paper "Composition Theorems for f-Differential Privacy".
+
+It includes all code to generate the figures from the paper.
+
+## Requirements
+
+The artifact is available as a Docker image. Note that the image has been built for
+linux/amd64 but should run fine on Windows or MacOS (tested on MacOS with ARM processor).
+
+Alternatively, to run the code locally you'll need Python3 and pip.
+Required packages are specified in requirements.txt.
+
+## Quick start - Install via Docker
+
+1. Download and extract fossacs-artifact_1.0.tar.gz
+
+  gunzip fossacs-artifact_1.0.tar.gz
+
+2. Load the image into Docker
+
+  docker load -i fossacs-artifact_1.0.tar
+
+3. Run the container (NOTE: this will create a figures/ directory on the local machine)
+
+- For Windows (Powershell)
+
+    docker run --rm -v "${PWD}\figures:/artifact/figures" fossacs-artifact:1.0
+
+- For Linux/MacOS
+
+    docker run --rm -v "$(pwd)/figures:/artifact/figures" fossacs-artifact:1.0
+
+Generated figures will be written to the `figures/` directory.
+
+## Local install - Instructions for MacOS / Linux
+
+1. Create a virtual environment and activate
+
+  python3 -m venv env; source env/bin/activate
+
+2. Install required packages
+
+  pip install -r requirements.txt
+
+3. Run code to generate the figures
+
+  python3 scripts/generate_plots.py
+
+NOTE: You may need to set your python path to find the python modules included in src.
+
+    export PYTHONPATH=.:$PYTHONPATH
+
+## Code structure
+
+- `src/qif.py` — QIF methods supporting computations on channels
+- `src/core.py` - Methods supporting f-differential privacy.
+- `src/alg.py` — Algorithms from the paper.
+- `src/graphs.py` — Code for plotting each of the figures.
+- `scripts/generate_plots.py` — Configure and generate Figures 2–9.
+
+## Instructions for modifying code
+
+Most of the configurable variables are in scripts/generate_plots.py.
+eg. epsilon, delta, alpha values. These can be modified for testing.
+
+There is also a show_plot() function that can be used in place of
+save_plot() to display the graph using matplotlib.
