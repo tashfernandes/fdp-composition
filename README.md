@@ -16,11 +16,11 @@ Required packages are specified in requirements.txt.
 
 1. Download and extract fossacs-artifact_1.0.tar.gz
 
-  gunzip fossacs-artifact_1.0.tar.gz
+   gunzip fossacs-artifact_1.0.tar.gz
 
 2. Load the image into Docker
 
-  docker load -i fossacs-artifact_1.0.tar
+   docker load -i fossacs-artifact_1.0.tar
 
 3. Run the container (NOTE: this will create a figures/ directory on the local machine)
 
@@ -38,15 +38,15 @@ Generated figures will be written to the `figures/` directory.
 
 1. Create a virtual environment and activate
 
-  python3 -m venv env; source env/bin/activate
+   python3 -m venv env; source env/bin/activate
 
 2. Install required packages
 
-  pip install -r requirements.txt
+   pip install -r requirements.txt
 
 3. Run code to generate the figures
 
-  python3 scripts/generate_plots.py
+   python3 scripts/generate_plots.py
 
 NOTE: You may need to set your python path to find the python modules included in src.
 
