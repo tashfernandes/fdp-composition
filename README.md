@@ -14,23 +14,23 @@ Required packages are specified in requirements.txt.
 
 ### Quick start - Install via Docker
 
-1. Download and extract fossacs-artifact_1.0.tar.gz
+1. Download and extract fdp-artifact_1.0.tar.gz
 
-   gunzip fossacs-artifact_1.0.tar.gz
+   gunzip fdp-artifact_1.0.tar.gz
 
 2. Load the image into Docker
 
-   docker load -i fossacs-artifact_1.0.tar
+   docker load -i fdp-artifact_1.0.tar
 
 3. Run the container (NOTE: this will create a figures/ directory on the local machine)
 
 - For Windows (Powershell)
 
-    docker run --rm -v "${PWD}\figures:/artifact/figures" fossacs-artifact:1.0
+    docker run --rm -v "${PWD}\figures:/artifact/figures" fdp-artifact:1.0
 
 - For Linux/MacOS
 
-    docker run --rm -v "$(pwd)/figures:/artifact/figures" fossacs-artifact:1.0
+    docker run --rm -v "$(pwd)/figures:/artifact/figures" fdp-artifact:1.0
 
 Generated figures will be written to the `figures/` directory.
 

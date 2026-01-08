@@ -1,0 +1,5 @@
+This artifact is available as a Docker image, or can be installed locally using Python3/pip.
+
+The Docker image was built for linux/amd64 and was tested on MacOS/ARM. 
+
+Python3/pip installation was tested on MacOS/ARM. Package requirements are included in requirements.txt
