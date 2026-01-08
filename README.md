@@ -1,36 +1,37 @@
 # f-Differential Privacy - Composition Results
 
-This artifact accompanies the paper "Composition Theorems for f-Differential Privacy".
+This code accompanies the paper "Composition Theorems for f-Differential Privacy".
 
 It includes all code to generate the figures from the paper.
 
 ## Getting Started
 
-The artifact is available as a Docker image. Note that the image has been built for
-linux/amd64 but should run fine on Windows or MacOS (tested on MacOS with ARM processor).
+An artifact for evaluation has been provided as a Docker image.
+Note that the image has been built for linux/amd64 but should run fine on Windows or MacOS. 
+The artifact was tested on MacOS with ARM processor.
 
 Alternatively, to run the code locally you'll need Python3 and pip.
 Required packages are specified in requirements.txt.
 
 ### Quick start - Install via Docker
 
-1. Download and extract fdp-artifact_1.0.tar.gz
+1. Download the artifact here: https://doi.org/10.5281/zenodo.18185391 and extract it
 
-   gunzip fdp-artifact_1.0.tar.gz
+   `gunzip fdp-artifact_1.0.tar.gz`
 
 2. Load the image into Docker
 
-   docker load -i fdp-artifact_1.0.tar
+   `docker load -i fdp-artifact_1.0.tar`
 
 3. Run the container (NOTE: this will create a figures/ directory on the local machine)
 
 - For Windows (Powershell)
 
-    docker run --rm -v "${PWD}\figures:/artifact/figures" fdp-artifact:1.0
+    `docker run --rm -v "${PWD}\figures:/artifact/figures" fdp-artifact:1.0`
 
 - For Linux/MacOS
 
-    docker run --rm -v "$(pwd)/figures:/artifact/figures" fdp-artifact:1.0
+    `docker run --rm -v "$(pwd)/figures:/artifact/figures" fdp-artifact:1.0`
 
 Generated figures will be written to the `figures/` directory.
 
