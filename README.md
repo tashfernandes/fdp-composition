@@ -47,13 +47,14 @@ code uses latex to render labels, so you also need some texlive packages.
 
 - On Linux this can be accomplished with:
 
-   `apt-get update && apt-get install -y --no-install-recommends \
+```bash
+   apt-get update && apt-get install -y --no-install-recommends \
        texlive-latex-base \
        texlive-latex-recommended \
        texlive-latex-extra \
        texlive-fonts-recommended \
        cm-super \
-       dvipng`
+       dvipng
 
 - On MacOS, install the MacTex distribution from here: https://www.tug.org/mactex/
 
