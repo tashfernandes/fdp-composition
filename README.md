@@ -1,6 +1,7 @@
 # f-Differential Privacy - Composition Results
 
 This code accompanies the paper "Composition Theorems for f-Differential Privacy".
+The latest release is also available for download here: https://doi.org/10.5281/zenodo.18202887
 
 It includes all code to generate the figures from the paper.
 
