@@ -42,23 +42,40 @@ of the supplied methods.
 
 ### Local install - Instructions for MacOS / Linux
 
+You need to have Python3 already installed; in addition, the plotting
+code uses latex to render labels, so you also need some texlive packages.
+
+- On Linux this can be accomplished with:
+
+   `apt-get update && apt-get install -y --no-install-recommends \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-latex-extra \
+    texlive-fonts-recommended \
+    cm-super \
+    dvipng`
+
+- On MacOS, install the MacTex distribution from here: https://www.tug.org/mactex/
+
+Once these are installed, you can run the code using the following:
+
 1. Create a virtual environment and activate
 
-   python3 -m venv env; source env/bin/activate
+   `python3 -m venv env; source env/bin/activate`
 
 2. Install required packages
 
-   pip install -r requirements.txt
+   `pip install -r requirements.txt`
 
 3. Run code to generate the figures
 
-   python3 scripts/generate_plots.py
+   `python3 scripts/generate_plots.py`
 
 This will generate the figures from the paper.
 
 NOTE: You may need to set your python path to find the python modules included in src.
 
-    export PYTHONPATH=.:$PYTHONPATH
+    `export PYTHONPATH=.:$PYTHONPATH`
 
 ## Code structure
 
