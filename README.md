@@ -59,7 +59,7 @@ code uses latex to render labels, so you also need some texlive packages.
 
 - On MacOS, install the MacTex distribution from here: https://www.tug.org/mactex/
 
-Once these are installed, you can run the code using the following:
+Once these are installed, you can setup and run the code using the following:
 
 1. Create a virtual environment and activate
 
