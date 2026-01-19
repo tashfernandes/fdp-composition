@@ -9,6 +9,7 @@ def fig2():
   filename = 'figures/fig2_f_epsilon_delta.pdf'
 
   tradeoff_graph(eps, delta)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig3():
@@ -17,6 +18,7 @@ def fig3():
 
   C = np.array([ [2/5, 3/5], [4/5, 1/5] ])
   barycentric_graph(C)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig4():
@@ -30,6 +32,7 @@ def fig4():
   h = 2.3
 
   hockeystick_refinement(alpha, f1_alpha, f2_alpha, h)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig5():
@@ -40,6 +43,7 @@ def fig5():
   h = 0.6
 
   hockeystick_posteriors(C, h)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig6():
@@ -50,6 +54,7 @@ def fig6():
   delta = 0.05
 
   parallel_composition(eps, delta)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig7():
@@ -66,6 +71,7 @@ def fig7():
   p = 0.3
 
   visible_choice(R, C, p)
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig8():
@@ -82,6 +88,7 @@ def fig8():
 
   purification(eps, delta, r, eps_prime, delta_prime, r_prime)
 
+  print("Writing ", filename)
   save_plot(filename)
 
 def fig9():
@@ -93,6 +100,7 @@ def fig9():
   gamma = 0.2
 
   subsampling(eps, delta, gamma)
+  print("Writing ", filename)
   save_plot(filename)
 
 
