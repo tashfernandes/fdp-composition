@@ -1,7 +1,8 @@
 # f-Differential Privacy - Composition Results
 
 This code accompanies the paper "Composition Theorems for f-Differential Privacy".
-The latest release is also available for download here: https://doi.org/10.5281/zenodo.18202887
+The latest release of this github repository is also available for download 
+here: https://doi.org/10.5281/zenodo.18202887
 
 It includes all code to generate the figures from the paper.
 
@@ -70,15 +71,16 @@ Once these are installed, you can setup and run the code using the following:
 
    `pip install -r requirements.txt`
 
-3. Run code to generate the figures
+3. Set your python path to find the python modules included in src
+
+    `export PYTHONPATH=.:$PYTHONPATH`
+
+4. Run code to generate the figures
 
    `python3 scripts/generate_plots.py`
 
-This will generate the figures from the paper.
+This will generate the figures from the paper in the `figures/` directory.
 
-NOTE: You may need to set your python path to find the python modules included in src.
-
-    `export PYTHONPATH=.:$PYTHONPATH`
 
 ## Code structure
 
