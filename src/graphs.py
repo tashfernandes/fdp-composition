@@ -87,7 +87,7 @@ def barycentric_graph(C):
   X = np.linspace(0, 1, 100)
   Vg_vec = np.vectorize(Vg)
   # Plot Vg
-  plt.plot(X, Vg_vec(X), color=COLORS[1], label='$V_g({\delta})$', linewidth=2)
+  plt.plot(X, Vg_vec(X), color=COLORS[1], label=r'$V_g({\delta})$', linewidth=2)
   
   # Now plot hypers for our channel C
   y_marginal = np.array([ C[0][0]+C[1][0], C[0][1]+C[1][1] ])
