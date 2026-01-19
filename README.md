@@ -19,21 +19,21 @@ Required packages are specified in requirements.txt.
 
 1. Download the artifact here: https://doi.org/10.5281/zenodo.18185391 and extract it
 
-   `gunzip fdp-artifact_1.0.tar.gz`
+   `gunzip fdp-artifact_1.1.tar.gz`
 
 2. Load the image into Docker
 
-   `docker load -i fdp-artifact_1.0.tar`
+   `docker load -i fdp-artifact_1.1.tar`
 
 3. Run the container (NOTE: this will create a figures/ directory on the local machine)
 
 - For Windows (Powershell)
 
-    `docker run --rm -v "${PWD}\figures:/artifact/figures" fdp-artifact:1.0`
+    `docker run --rm -v "${PWD}\figures:/artifact/figures" fdp-artifact:1.1`
 
 - For Linux/MacOS
 
-    `docker run --rm -v "$(pwd)/figures:/artifact/figures" fdp-artifact:1.0`
+    `docker run --rm -v "$(pwd)/figures:/artifact/figures" fdp-artifact:1.1`
 
 Generated figures will be written to the `figures/` directory.
 
