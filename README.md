@@ -17,7 +17,8 @@ Required packages are specified in requirements.txt.
 
 ### Quick start - Install via Docker
 
-1. Download the artifact here: https://doi.org/10.5281/zenodo.18185391 and extract it
+1. Download the latest version of the Docker artifact here: https://doi.org/10.5281/zenodo.18185390 
+and extract it
 
    `gunzip fdp-artifact_1.1.tar.gz`
 
