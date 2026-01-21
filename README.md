@@ -26,7 +26,11 @@ and extract it
 
    `docker load -i fdp-artifact_1.2.tar`
 
-3. Run the container (NOTE: this will create a figures/ directory on the local machine)
+3. Create the figures/ directory
+
+  `mkdir -p figures`
+
+4. Run the container 
 
 - For Windows (Powershell)
 
