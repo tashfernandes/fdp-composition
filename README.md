@@ -26,7 +26,7 @@ and extract it
 
    `docker load -i fdp-artifact_1.2.tar`
 
-3. Create the figures/ directory
+3. Create the figures/ directory 
 
   `mkdir -p figures`
 
@@ -85,6 +85,7 @@ Once these are installed, you can setup and run the code using the following:
    `python3 scripts/generate_plots.py`
 
 This will generate the figures from the paper in the `figures/` directory.
+Note that this code will also create the `figures/` directory.
 
 
 ## Code structure
